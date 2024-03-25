@@ -1,24 +1,23 @@
 import React from 'react'
 import "./style.css"
+import { Link } from 'react-router-dom'
 const Homepage = () => {
     return (
         <>
-
             <div className="w3-top">
                 <div
                     className="w3-bar w3-white w3-padding w3-card"
                     style={{ letterSpacing: 4 }}
                 >
-                    <a href="#home" className="w3-bar-item w3-button">
-                        Gourmet au Catering
+                    <a className="w3-bar-item w3-button"    >
+                        <Link to="/"  >Gourmet au Catering</Link>
                     </a>
-                    {/* Right-sided navbar links. Hide them on small screens */}
                     <div className="w3-right w3-hide-small">
-                        <a href="#about" className="w3-bar-item w3-button">
-                            About
+                        <a className="w3-bar-item w3-button">
+                            <Link to="/Recette"   >Recette</Link>
                         </a>
-                        <a href="#menu" className="w3-bar-item w3-button">
-                            Menu
+                        <a className="w3-bar-item w3-button">
+                            <Link to="/fiches"  >Fiches</Link>
                         </a>
                         <a href="/regitser" className="w3-bar-item w3-button">
                             Register
